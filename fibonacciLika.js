@@ -22,7 +22,6 @@ const fibonacciLike = (array) => {
       for (let k = 0; k < array.length; k++) {
         const element = array[k];
       }
-
       if (firstI + array[index + 1] === array[index + 2]) {
         fiboLikes.push(firstI, array[index + 1], array[index + 2]);
         firstI = array[index + 2];
