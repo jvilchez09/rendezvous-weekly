@@ -34,3 +34,4 @@ const fibonacciLike = (array) => {
 };
 
 fibonacciLike([1, 3, 7, 11, 12, 14, 18]);
+// realizar un includes para verificar mejor
