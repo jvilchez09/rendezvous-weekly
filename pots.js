@@ -11,21 +11,17 @@ let garden = [1, 0, 0, 0, 1];
 
 const canPlant = (garden, seeds) => {
   let i = 0,
-    available = 0;
+    planted = 0;
   garden.forEach((pot) => {
     if (pot === 0) {
-      console.log("pot" + pot);
       if (!garden[i + 1] && !garden[i + 2]) {
         garden[i + 1] = 1;
-        available++;
+        planted++;
       }
     }
     i++;
   });
-  console.log("sedds" + seeds);
-  console.log("available" + available);
-  console.log({ garden });
-  if (available >= seeds) return true;
+  if (planted >= seeds) return true;
   return false;
 };
 
