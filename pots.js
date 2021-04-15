@@ -21,8 +21,7 @@ const canPlant = (garden, seeds) => {
     }
     i++;
   });
-  if (planted >= seeds) return true;
-  return false;
+  return planted >= seeds ? true : false;
 };
 
 console.log(canPlant(garden, 1));
